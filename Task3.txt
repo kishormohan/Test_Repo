@@ -1,0 +1,151 @@
+#IP address of particular domain (guvi.in)
+nslookup guvi.in
+
+ubuntu@ip-172-31-84-167:~/.ssh$ nslookup guvi.in
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   guvi.in
+Address: 104.26.4.88
+Name:   guvi.in
+Address: 104.26.5.88
+Name:   guvi.in
+Address: 172.67.70.207
+Name:   guvi.in
+Address: 2606:4700:20::ac43:46cf
+Name:   guvi.in
+Address: 2606:4700:20::681a:458
+Name:   guvi.in
+Address: 2606:4700:20::681a:558
+
+*******************************************************************************************************************************************************************************************
+#CPU usage of my server
+top
+
+
+ubuntu@ip-172-31-84-167:~/.ssh$ top
+top - 10:47:23 up 7 min,  1 user,  load average: 0.00, 0.05, 0.04
+Tasks:  98 total,   1 running,  97 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.2 us,  0.0 sy,  0.0 ni, 93.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :    949.2 total,    367.0 free,    176.2 used,    406.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    617.2 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  101916  12632   8280 S   0.0   1.3   0:03.62 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      7 root      20   0       0      0      0 I   0.0   0.0   0:00.03 kworker/0:0-mm_percpu_wq
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.07 ksoftirqd/0
+     15 root      20   0       0      0      0 I   0.0   0.0   0:00.38 rcu_sched
+     16 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 migration/0
+     17 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/0
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
+     20 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq
+     21 root      20   0       0      0      0 I   0.0   0.0   0:00.09 kworker/u30:1-events_unbound
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungtaskd
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
+     26 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
+     27 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kcompactd0
+     28 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     29 root      39  19       0      0      0 S   0.0   0.0   0:00.00 khugepaged
+     30 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
+     31 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     32 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
+     33 root      20   0       0      0      0 S   0.0   0.0   0:00.00 xen-balloon
+     34 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq
+     35 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+     36 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md
+     37 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md_bitmap
+     38 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
+     39 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
+     40 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 watchdogd
+     43 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kswapd0
+     44 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptfs-kthread
+     45 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     46 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 acpi_thermal_pm
+     47 root      20   0       0      0      0 S   0.0   0.0   0:00.02 xenbus
+     48 root      20   0       0      0      0 S   0.0   0.0   0:00.16 xenwatch
+     49 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-wq
+     50 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-reset-wq
+     51 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-delete-wq
+     52 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-auth-wq
+     53 root      20   0       0      0      0 S   0.0   0.0   0:00.00 scsi_eh_0
+     54 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_0
+     55 root      20   0       0      0      0 S   0.0   0.0   0:00.00 scsi_eh_1
+     56 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_1
+
+*******************************************************************************************************************************************************************************************
+
+
+#memory usage of my server
+free -h
+
+ubuntu@ip-172-31-84-167:~/.ssh$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           949Mi       176Mi       366Mi       0.0Ki       406Mi       617Mi
+Swap:             0B          0B          0B
+
+*******************************************************************************************************************************************************************************************
+
+#Test the connectivity between 2 nodes
+ping 172.31.90.189 
+(or) 
+ssh ubuntu@172-31-90-189
+
+
+ubuntu@ip-172-31-84-167:~/.ssh$ ssh ubuntu@172-31-90-189
+ssh: Could not resolve hostname 172-31-90-189: Temporary failure in name resolution
+ubuntu@ip-172-31-84-167:~/.ssh$ ssh ubuntu@172.31.90.189
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 6.5.0-1014-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+  System information as of Wed Apr 17 10:48:37 UTC 2024
+
+  System load:  0.080078125       Processes:             102
+  Usage of /:   20.7% of 7.57GB   Users logged in:       1
+  Memory usage: 22%               IPv4 address for eth0: 172.31.90.189
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Wed Apr 17 10:46:36 2024 from 172.31.84.167
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-90-189:~$ exit
+logout
+Connection to 172.31.90.189 closed.
+
+*******************************************************************************************************************************************************************************************
+
+
+#Check whether my port is open or not
+netstat -tulpn | grep 9000
+
+
+root@ip-172-31-84-167:/home/ubuntu/.ssh# netstat -tulpn | grep 9000
+root@ip-172-31-84-167:/home/ubuntu/.ssh#
+

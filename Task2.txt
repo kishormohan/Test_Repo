@@ -1,0 +1,5 @@
+#Create a file with .txt extension
+touch /home/demo.txt
+
+# Change the permission 
+chmod 764 demo.txt

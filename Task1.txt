@@ -1,0 +1,11 @@
+#Create 20 files with .txt extensions
+touch devops{0001..0010}.txt
+
+#rename the first 5 files to .yml extension
+rename  .txt .yml devops{0001..0005}.txt
+
+#Print the latest created top 5 files among the total no of files
+ls -lt | head -n 5
+
+
+
