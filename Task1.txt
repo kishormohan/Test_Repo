@@ -1,4 +1,4 @@
-# Hello TestCreate 20 files with .txt extensions
+# Test HelloTestCreate 20 files with .txt extensions
 touch devops{0001..0010}.txt
 
 #rename the first 5 files to .yml extension
